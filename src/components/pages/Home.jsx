@@ -1,23 +1,46 @@
-import logo from '../../logo.svg';
-import '../../App.css';
+import ChasmsArt from '../../chasms-art.jpg';
+import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+import Song from '../Song';
+import '../../styles/pages/Home.css';
 
 export default function Home() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div className='home'>
+      <Parallax pages={3}>
+        <ParallaxLayer
+          speed={.05}
+          factor={1}
+          style={{
+            backgroundImage: `url(${ChasmsArt})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            height: '250vh',
+            width: '100%'
+          }}
         >
-          Learn React
-        </a>
-      </header>
+        </ParallaxLayer>
+
+        <ParallaxLayer
+          offset={1}
+          speed={.5}
+          style={{
+            backgroundColor: '#282c34'
+          }}
+        >
+          <Song></Song>
+        </ParallaxLayer>
+
+        <ParallaxLayer
+          offset={2}
+          speed={.5}
+          style={{
+            backgroundColor: '#282c34'
+          }}
+        >
+          <h1>SOCIALS</h1>
+        </ParallaxLayer>
+      </Parallax>
     </div>
   )
 }
