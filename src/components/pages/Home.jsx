@@ -1,6 +1,6 @@
 import ChasmsArt from '../../chasms-art.jpg';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
-import Song from '../Song';
+import Music from './Music';
 import '../../styles/pages/Home.css';
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
       <Parallax pages={3}>
         <ParallaxLayer
           speed={.05}
-          factor={1}
+          // factor={3}
           style={{
             backgroundImage: `url(${ChasmsArt})`,
             backgroundSize: 'cover',
@@ -22,20 +22,22 @@ export default function Home() {
         </ParallaxLayer>
 
         <ParallaxLayer
-          offset={1}
-          speed={.5}
+          offset={0.9}
+          speed={1.25}
           style={{
-            backgroundColor: '#282c34'
+            // backgroundColor: '#282c34'
           }}
         >
-          <Song></Song>
+          <Music></Music>
         </ParallaxLayer>
 
         <ParallaxLayer
           offset={2}
-          speed={.5}
+          // speed={1.25}
+          // factor={.75}
           style={{
-            backgroundColor: '#282c34'
+            backgroundColor: '#282c34',
+            // height: '20vh'
           }}
         >
           <h1>SOCIALS</h1>
