@@ -2,7 +2,6 @@ import '../styles/Song.css';
 
 export default function Song({ songTitle, videoUrl, listenUrl }) {
 
-
   return (
     <div className="song">
       <h1>{songTitle}</h1>
@@ -14,7 +13,7 @@ export default function Song({ songTitle, videoUrl, listenUrl }) {
         allowFullScreen>
       </iframe>
       <h3>
-        <a href={listenUrl}>LISTEN</a>
+        <a href={listenUrl}>WATCH | LISTEN</a>
       </h3>
     </div>
   )
