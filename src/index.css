@@ -17,6 +17,7 @@ code {
 h1 {
   font-size: 6.5vh;
   margin-bottom: 5%;
+  border: 1.25mm ridge rgb(255, 255, 255);
 }
 
 p {
