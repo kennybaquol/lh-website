@@ -1,7 +1,6 @@
 import '../styles/Song.css';
 
 export default function Song({ songTitle, videoUrl, listenUrl }) {
-
   return (
     <div className="song">
       <h1>{songTitle}</h1>
