@@ -1,0 +1,38 @@
+h3 {
+  font-size: 3.5vh;
+  text-shadow: 0px 10px 10px rgb(0, 0, 0, .25);
+}
+
+a {
+  margin: 0 2vw;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+/**
+* Alter Link font size based on screen width, and
+* split them into 2 rows of 3 when less than 769px wide
+**/
+/* @media only screen and (max-width: 1400px) {
+    .navbar { font-size: x-large; }
+}
+
+@media only screen and (max-width: 992px) {
+    .navbar { font-size: larger; }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        font-size: large;
+    }
+
+    .child {
+        flex-basis: 33%;
+        margin: 2% 0%;
+    }
+} */

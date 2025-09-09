@@ -1,5 +1,6 @@
 import ChasmsArt from '../../chasms-art.jpg';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+import NavBar from '../NavBar';
 import Music from './Music';
 import Socials from '../Socials';
 import '../../styles/pages/Home.css';
@@ -7,6 +8,7 @@ import '../../styles/pages/Home.css';
 export default function Home() {
   return (
     <div className='home'>
+      <NavBar />
       <Parallax pages={2}>
         <ParallaxLayer
           speed={.03}
@@ -25,7 +27,7 @@ export default function Home() {
           offset={0.8}
           speed={1.25}
         >
-          <div className='parallax-background'>
+          <div className='gradient-background'>
             <Music />
           </div>
         </ParallaxLayer>
@@ -33,7 +35,7 @@ export default function Home() {
         <ParallaxLayer
           offset={1.85}
         >
-          <div className='parallax-background'>
+          <div className='gradient-background'>
             <Socials />
           </div>
         </ParallaxLayer>
