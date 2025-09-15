@@ -16,7 +16,7 @@ export default function Music() {
   ]
 
   return (
-    <div className="music">
+    <div className='music' id='music'>
       {songs.map((song, idx) => (
         <Song
           key={idx}
