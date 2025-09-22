@@ -1,0 +1,11 @@
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 5vh 0;
+}
+
+.fa-brands, .fa-solid {
+  margin: 0 1.75vw;
+}
